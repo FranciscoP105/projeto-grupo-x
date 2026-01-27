@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head><title>Projeto DevOps</title></head>
+<body>
+<h1>Servidor web a funcionar no Kubernetes! 🛸</h1>
+</body>
+</html>
