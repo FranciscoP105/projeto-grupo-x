@@ -1,0 +1,8 @@
+minikube start
+& minikube docker-env | Invoke-Expression
+docker build -t web-devops:1.0 .
+kubectl apply -f k8s/namespace.yaml
+kubectl apply -f k8s/configmap.yaml
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+minikube service web-service-grupo-x --namespace projeto-grupo-x

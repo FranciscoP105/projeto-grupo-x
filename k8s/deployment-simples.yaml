@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app-grupo-x
+  namespace: projeto-grupo-x
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web-app-grupo-x
+  template:
+    metadata:
+      labels:
+        app: web-app-grupo-x
+    spec:
+      containers:
+      - name: web-app
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3

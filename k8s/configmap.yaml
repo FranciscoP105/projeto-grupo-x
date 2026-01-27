@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-config
+  namespace: projeto-grupo-x
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html><head><title>Projeto DevOps Grupo X</title></head>
+    <body><h1>Web App Grupo X - Kubernetes OK!</h1>
+    <p>3 réplicas nginx:alpine | Namespace: projeto-grupo-x</p>
+    </body></html>
