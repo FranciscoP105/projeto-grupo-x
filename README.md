@@ -1,3 +1,4 @@
+ HEAD
 # Projeto DevOps Grupo X
 
 Deploy Kubernetes nginx:alpine (3 réplicas, namespace projeto-grupo-x).
@@ -11,3 +12,8 @@ minikube start
 kubectl apply -f k8s/
 minikube tunnel
 localhost:30080
+
+Contribuição de Francisco Batista no projeto de DEVOPS
+
+Contribuição de Dinis Barbas no projeto de DEVOPS
+ 439934faf35735bbf2887cd490560f98b6e78613
